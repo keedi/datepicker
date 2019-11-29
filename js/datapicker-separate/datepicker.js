@@ -403,7 +403,7 @@ $.extend(SingleDatePicker.prototype, {
     this.$container.on('click', '.c-datepicker-picker__btn-now', function () {
       var _this = API.getPicker($(this));
       setValue(_this, moment().format(_this.config.format));
-      _this.datePickerObject.hide('shortcut');
+      //_this.datePickerObject.hide('shortcut');
     });
 
     // 点击清空
