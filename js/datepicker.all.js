@@ -385,17 +385,17 @@
       return html;
     },
     pickerHeaderPrevTpl: function (nameOptions, className) {
-      var html = '<i class="kxiconfont icon-first c-datepicker-picker__icon-btn ' + className + '__prev-btn year" aria-label="' + nameOptions.prevYear + '"></i>' +
-        '<i class="kxiconfont icon-left c-datepicker-picker__icon-btn ' + className + '__prev-btn month" aria-label="' + nameOptions.nextMonth + '"></i>';
+      var html = '<i class="fa-iconfont fa fa-fast-backward c-datepicker-picker__icon-btn ' + className + '__prev-btn year" aria-label="' + nameOptions.prevYear + '"></i>' +
+        '<i class="fa-iconfont fa fa-backward c-datepicker-picker__icon-btn ' + className + '__prev-btn month" aria-label="' + nameOptions.nextMonth + '"></i>';
       return html;
     },
     pickerHeaderNextTpl: function (nameOptions, className) {
-      var html = '<i class="kxiconfont icon-right c-datepicker-picker__icon-btn ' + className + '__next-btn month" aria-label="' + nameOptions.nextMonth + '"></i>' + '<i class="kxiconfont icon-last c-datepicker-picker__icon-btn ' + className + '__next-btn year" aria-label="' + nameOptions.nextYear + '"></i>';
+      var html = '<i class="fa-iconfont fa fa-forward c-datepicker-picker__icon-btn ' + className + '__next-btn month" aria-label="' + nameOptions.nextMonth + '"></i>' + '<i class="fa-iconfont fa fa-fast-forward c-datepicker-picker__icon-btn ' + className + '__next-btn year" aria-label="' + nameOptions.nextYear + '"></i>';
       return html;
     },
     pickerHeaderNextSingleTpl: function (nameOptions, className) {
-      var html = '<i class="kxiconfont icon-last c-datepicker-picker__icon-btn ' + className + '__next-btn year" aria-label="' + nameOptions.nextYear + '"></i>' +
-        '<i class="kxiconfont icon-right c-datepicker-picker__icon-btn ' + className + '__next-btn month" aria-label="' + nameOptions.nextMonth + '"></i>';
+      var html = '<i class="fa-iconfont fa fa-fast-forward c-datepicker-picker__icon-btn ' + className + '__next-btn year" aria-label="' + nameOptions.nextYear + '"></i>' +
+        '<i class="fa-iconfont fa fa-forward c-datepicker-picker__icon-btn ' + className + '__next-btn month" aria-label="' + nameOptions.nextMonth + '"></i>';
       return html;
     },
     pickerTimeHeaderTpl: function (nameOptions, className) {
@@ -434,7 +434,7 @@
         '<div class="c-datepicker-date-range-picker__time-content">' +
         timeHeader +
         '</div>' +
-        '<span class="kxiconfont icon-right"></span>' +
+        '<span class="fa-iconfont fa fa-forward"></span>' +
         '<div class="c-datepicker-date-range-picker__time-content">' +
         timeHeader +
         '</div>' +
