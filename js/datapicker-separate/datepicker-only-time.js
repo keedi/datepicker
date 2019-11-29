@@ -9,7 +9,7 @@ function RangeDatePickerTime(datePickerObject) {
   this.hasTime = true;
   this.onlyTime = true;
   this.params = {};
-  this.language=this.config.language||'zh-CN';
+  this.language=this.config.language||'en-US';
   this.timeMin = API.timeVal(this, 'min');
   this.timeMax = API.timeVal(this, 'max');
   this.configMinMax = API.getOnlyTimeMinMax(this);

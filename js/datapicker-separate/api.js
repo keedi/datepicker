@@ -9,7 +9,7 @@ var defaultOptions = {
   shortcutOptions: [],
   // between:数字：30，string:month/year
   between: false,
-  language: 'zh-CN',
+  language: 'en-US',
   hide: function () { },
   show: function () { }
 };

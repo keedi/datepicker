@@ -229,7 +229,7 @@ function SingleDatePicker(datePickerObject) {
   this.$input = datePickerObject.$target.find('input');
   this.config = datePickerObject.config;
   this.params = {};
-  this.language = this.config.language || 'zh-CN';
+  this.language = this.config.language || 'en-US';
   this.hasTime = this.config.format.split(' ').length > 1;
   if (this.hasTime) {
     this.timeMin = API.timeVal(this, 'min');
