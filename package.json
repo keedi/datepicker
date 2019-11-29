@@ -1,0 +1,38 @@
+{
+    "name": "kdatepicker",
+    "version": "0.0.1",
+    "description": "datepicker module forked from https://github.com/qiuyaofan/datepicker",
+    "homepage": "https://github.com/keedi/datepicker",
+    "author": "Keedi Kim <keedi.kim@gmail.com> (https://github.com/keedi)",
+    "keywords": [
+        "datepicker",
+        "timepicker",
+        "datetimepicker"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/keedi/datepicker"
+    },
+    "bugs": {
+        "url": "https://github.com/keedi/datepicker"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/core": "^7.1.6",
+        "js-beautify": "^1.10.2",
+        "parcel-bundler": "^1.10.3",
+        "sass": "^1.15.1"
+    },
+    "dependencies": {
+        "jquery": "^3.4.1",
+        "moment": "^2.24.0"
+    },
+    "scripts": {
+        "build": "npm run build:css && npm run build:js",
+        "build:js": "npx parcel build --out-dir=dist --out-file=kdatetime.js --public-url=/dist/ src/js/kdatetime.js",
+        "build:css": "npx parcel build --out-dir=dist --out-file=kdatetime.css --public-url=/dist/ src/scss/kdatetime.scss",
+        "clean:cache": "rm -rf .cache",
+        "clean:dist": "rm -rf public/dist",
+        "clean": "npm run clean:cache && npm run clean:dist"
+    }
+}
