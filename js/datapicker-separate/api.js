@@ -326,7 +326,7 @@ var RENDERAPI={
       '</div>';
     return html;
   },
-  timeMainTpl: function (nameOptions,time){
+  timeMainTpl: function (nameOptions, time) {
     var html = '<div class="c-datepicker-time-panel c-datepicker-popper" style="">' +
       '<div class="c-datepicker-time-panel__content has-seconds">' +
       '<div class="c-datepicker-time-spinner has-seconds">' +
@@ -334,13 +334,17 @@ var RENDERAPI={
       '</div>' +
       '</div>' +
       '<div class="c-datepicker-time-panel__footer">' +
-      '<button type="button" class="c-datepicker-time-panel__btn min">' + nameOptions.zero+'</button>' +
-      '<button type="button" class="c-datepicker-time-panel__btn max">23:59</button>' +
-      '<button type="button" class="c-datepicker-time-panel__btn cancel">' + nameOptions.cancel +'</button>' +
-        '<button type="button" class="c-datepicker-time-panel__btn confirm">' + nameOptions.confirm+'</button>' +
+        '<div class="c-datepicker-time-panel__footer_preset">' +
+          '<button type="button" class="c-datepicker-time-panel__btn min">' + nameOptions.zero + '</button>' +
+          '<button type="button" class="c-datepicker-time-panel__btn max">23:59</button>' +
+        '</div>' +
+        '<div class="c-datepicker-time-panel__footer_action">' +
+          '<button type="button" class="c-datepicker-time-panel__btn cancel">' + nameOptions.cancel + '</button>' +
+          '<button type="button" class="c-datepicker-time-panel__btn confirm">' + nameOptions.confirm + '</button>' +
+        '</div>' +
       '</div>' +
       '</div>';
-      return html;
+    return html;
   },
   sideBarButton: function (day, time, name){
     var html = '<button type="button" class="c-datepicker-picker__shortcut" data-value="' + day + '" data-time="' + time + '">' + name+'</button>';

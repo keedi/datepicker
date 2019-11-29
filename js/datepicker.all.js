@@ -339,10 +339,14 @@
         '</div>' +
         '</div>' +
         '<div class="c-datepicker-time-panel__footer">' +
-        '<button type="button" class="c-datepicker-time-panel__btn min">' + nameOptions.zero + '</button>' +
-        '<button type="button" class="c-datepicker-time-panel__btn max">23:59</button>' +
-        '<button type="button" class="c-datepicker-time-panel__btn cancel">' + nameOptions.cancel + '</button>' +
-        '<button type="button" class="c-datepicker-time-panel__btn confirm">' + nameOptions.confirm + '</button>' +
+          '<div class="c-datepicker-time-panel__footer_preset">' +
+            '<button type="button" class="c-datepicker-time-panel__btn min">' + nameOptions.zero + '</button>' +
+            '<button type="button" class="c-datepicker-time-panel__btn max">23:59</button>' +
+          '</div>' +
+          '<div class="c-datepicker-time-panel__footer_action">' +
+            '<button type="button" class="c-datepicker-time-panel__btn cancel">' + nameOptions.cancel + '</button>' +
+            '<button type="button" class="c-datepicker-time-panel__btn confirm">' + nameOptions.confirm + '</button>' +
+          '</div>' +
         '</div>' +
         '</div>';
       return html;
